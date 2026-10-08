@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connect — Social Media</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="logo">Connect</div>
+
+    <div class="profile">
+        <span class="avatar small">Y</span>
+        <span>Your Profile</span>
+    </div>
+</header>
+
+<div class="app-layout">
+
+    <!-- Navigation -->
+    <aside class="sidebar">
+        <button class="nav-button active" data-page="feed">
+            🏠 Feed
+        </button>
+
+        <button class="nav-button" data-page="messages">
+            💬 Messages
+        </button>
+
+        <button class="nav-button" data-page="groups">
+            👥 Conversations
+        </button>
+
+        <button class="nav-button" data-page="reports">
+            🚩 Reports
+        </button>
+    </aside>
+
+
+    <main class="content">
+
+        <!-- ========================= -->
+        <!-- FEED -->
+        <!-- ========================= -->
+
+        <section id="feed" class="page active-page">
+
+            <div class="page-heading">
+                <h1>Your Feed</h1>
+                <p>See what's happening today.</p>
+            </div>
+
+            <div class="create-post">
+                <span class="avatar">Y</span>
+                <input
+                    type="text"
+                    id="postInput"
+                    placeholder="What's on your mind?"
+                >
+                <button id="postButton">Post</button>
+            </div>
+
+            <div id="feedContainer">
+
+                <article class="post">
+
+                    <div class="post-header">
+                        <span class="avatar">A</span>
+
+                        <div>
+                            <strong>Alex Morgan</strong>
+                            <small>20 minutes ago</small>
+                        </div>
+                    </div>
+
+                    <p>
+                        Had a great morning hiking. The weather was amazing!
+                    </p>
+
+                    <div class="fake-image nature">
+                        🌲 Mountain Trail
+                    </div>
+
+                    <div class="post-actions">
+                        <button class="like-button">♡ Like</button>
+                        <button class="report-button">⚑ Report</button>
+                    </div>
+
+                </article>
+
+
+                <article class="post">
+
+                    <div class="post-header">
+                        <span class="avatar">N</span>
+
+                        <div>
+                            <strong>News Daily</strong>
+                            <small>1 hour ago</small>
+                        </div>
+                    </div>
+
+                    <p>
+                        Police released footage from a violent confrontation
+                        downtown earlier today. The video below contains
+                        graphic scenes.
+                    </p>
+
+                    <div class="fake-image violent">
+                        ⚠ Graphic news footage
+                    </div>
+
+                    <div class="post-actions">
+                        <button class="like-button">♡ Like</button>
+                        <button class="report-button">⚑ Report</button>
+                    </div>
+
+                </article>
+
+
+                <article class="post">
+
+                    <div class="post-header">
+                        <span class="avatar">G</span>
+
+                        <div>
+                            <strong>Gaming Central</strong>
+                            <small>3 hours ago</small>
+                        </div>
+                    </div>
+
+                    <p>
+                        Here are today's competitive gaming tournament results.
+                    </p>
+
+                    <div class="post-actions">
+                        <button class="like-button">♡ Like</button>
+                        <button class="report-button">⚑ Report</button>
+                    </div>
+
+                </article>
+
+
+                <article class="post">
+
+                    <div class="post-header">
+                        <span class="avatar">M</span>
+
+                        <div>
+                            <strong>Mike's Auto Shop</strong>
+                            <small>5 hours ago</small>
+                        </div>
+                    </div>
+
+                    <p>
+                        Five things you should check before buying used tires.
+                    </p>
+
+                    <div class="post-actions">
+                        <button class="like-button">♡ Like</button>
+                        <button class="report-button">⚑ Report</button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- MESSAGES -->
+        <!-- ========================= -->
+
+        <section id="messages" class="page">
+
+            <div class="page-heading">
+                <h1>Messages</h1>
+                <p>Conversation with Sarah</p>
+            </div>
+
+            <div class="chat">
+
+                <div class="chat-header">
+                    <span class="avatar">S</span>
+
+                    <div>
+                        <strong>Sarah Johnson</strong>
+                        <small>Online</small>
+                    </div>
+                </div>
+
+
+                <div id="messageContainer" class="message-container">
+
+                    <div class="message received">
+                        Hey! Are you coming to the event tonight?
+                    </div>
+
+                    <div class="message sent">
+                        Yes, I think so!
+                    </div>
+
+                    <div class="message received">
+                        Great! Do you know what time it starts?
+                    </div>
+
+                    <div class="message sent">
+                        I think it starts at 7.
+                    </div>
+
+                    <div class="message received">
+                        Sounds good 👍
+                    </div>
+
+                    <div class="message sent">
+                        I'll see you there.
+                    </div>
+
+                    <div class="message received">
+                        Perfect!
+                    </div>
+
+                </div>
+
+
+                <div class="chat-input">
+                    <input
+                        type="text"
+                        id="messageInput"
+                        placeholder="Write a message..."
+                    >
+
+                    <button id="sendButton">
+                        Send
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- CONVERSATIONS -->
+        <!-- ========================= -->
+
+        <section id="groups" class="page">
+
+            <div class="page-heading">
+                <h1>Conversations</h1>
+                <p>Your active conversations.</p>
+            </div>
+
+
+            <div class="conversation-card">
+
+                <div>
+                    <span class="avatar">C</span>
+                </div>
+
+                <div class="conversation-info">
+                    <strong>Computer Science Club</strong>
+                    <p>Emily: Meeting tomorrow at 4 PM.</p>
+                </div>
+
+                <span class="notification-badge">8</span>
+
+            </div>
+
+
+            <div class="conversation-card">
+
+                <div>
+                    <span class="avatar">F</span>
+                </div>
+
+                <div class="conversation-info">
+                    <strong>Friends Group</strong>
+                    <p>John: Anyone free this weekend?</p>
+                </div>
+
+                <span class="notification-badge">14</span>
+
+            </div>
+
+
+            <div class="conversation-card">
+
+                <div>
+                    <span class="avatar">P</span>
+                </div>
+
+                <div class="conversation-info">
+                    <strong>Project Team</strong>
+                    <p>Maria: I uploaded the latest document.</p>
+                </div>
+
+                <span class="notification-badge">3</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- REPORTS -->
+        <!-- ========================= -->
+
+        <section id="reports" class="page">
+
+            <div class="page-heading">
+                <h1>Your Reports</h1>
+                <p>Content you have reported.</p>
+            </div>
+
+
+            <div id="reportsContainer">
+
+                <div class="report-card">
+                    <div>
+                        <strong>Reported Post</strong>
+
+                        <p>
+                            "This is the post that you previously reported..."
+                        </p>
+
+                        <small>Status: Submitted for moderator review</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- Report Modal -->
+<div id="reportModal" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Report Post</h2>
+
+        <p>Why are you reporting this post?</p>
+
+        <select id="reportReason">
+            <option>Spam</option>
+            <option>Harassment</option>
+            <option>Violence</option>
+            <option>False information</option>
+            <option>Other</option>
+        </select>
+
+        <div class="modal-buttons">
+
+            <button id="cancelReport" class="secondary">
+                Cancel
+            </button>
+
+            <button id="submitReport">
+                Submit Report
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div id="toast" class="toast"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
